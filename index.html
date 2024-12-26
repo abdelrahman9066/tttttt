@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <form id="registerForm">
+       <div class="container mx-auto text-center">
+        <div class="group m-auto w-75 p-5">
+            <h1 class="text-secondary mb-4">Smart Login System</h1>
+            <input class="form-control mb-4" type="text" id="signName" placeholder="Enter Your Name">
+            <input class="form-control mb-4" type="text" id="signEmail" placeholder="Enter Your Email">
+            <input class="form-control mb-4" type="password" id="signPassword" placeholder="Enter Your Password">
+            <div class="text-danger d-none mb-4" id="nameAlert">At Least Two Characters Name</div>
+            <div class="text-danger d-none mb-4" id="emailAlert">Please Enter A Valid Email</div>
+            <div class="text-danger d-none mb-4" id="passwordAlert">-At Least 8 Characters <br> -One UpperCase At Least <br> -One Special Character <br> -One number at least </div>
+            <div class="text-danger d-none mb-4" id="existAlert">Email Is Already Exist</div>
+            <div class="text-success d-none mb-4 " id="successAlert">You Can Login Now!</div>
+            <button class="btn btn-outline-secondary w-25">Sign Up</button>
+            <p class="text-secondary mt-3">You have an Account?</p>
+            <a class="text-secondary text-decoration-none" href="../login/login.html">Sign in</a>
+        </div>
+       </div>
+    </form>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
